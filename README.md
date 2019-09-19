@@ -2,8 +2,27 @@ Hacking Charles Web Debugging Proxy
 
 <http://www.gfzj.us/tech/2015/06/24/charles-hacking.html>
 
-# Works for
+# Quick Setup
 
-- [4.2.1](4.2.1)
-- [4.2](4.2)
-- [4.1.1](4.1.1)
+(Tested with `Ubuntu 16.04`)
+
+## Installation
+
+Install official version first
+
+```
+sudo apt-key adv --keyserver pgp.mit.edu --recv-keys 1AD28806 &&
+sudo sh -c 'echo deb https://www.charlesproxy.com/packages/apt/ charles-proxy main > /etc/apt/sources.list.d/charles.list' &&
+sudo apt-get update &&
+sudo apt-get install charles-proxy
+```
+
+## Cracking
+
+Then, download and replace original `charles.jar` with cracked `charles.jar`
+
+```
+wget https://github.com/theapache64/charles-hacking/blob/master/4.2.7/charles.jar &&
+sudo rm /usr/lib/charles-proxy/charles.jar && 
+sudo mv charles.jar /usr/lib/charles-proxy/
+```
