@@ -22,7 +22,7 @@ sudo apt-get install charles-proxy
 Then, download and replace original `charles.jar` with cracked `charles.jar`
 
 ```
-wget https://github.com/theapache64/charles-hacking/blob/master/4.2.7/charles.jar &&
+wget https://github.com/HeIp/charles-hacking/raw/master/4.2.8/charles.jar &&
 sudo rm /usr/lib/charles-proxy/charles.jar && 
 sudo mv charles.jar /usr/lib/charles-proxy/
 ```
